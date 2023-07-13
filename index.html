@@ -2,15 +2,52 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            body > form > ul > li {
+                 list-style-type: none;
+             }
+            
+             ul > li {
+                list-style-type: none;
+             }
+             input {
+                 font-size: large;
+                 border-radius: 30px;
+                 width: 400px;
+                 height: 30px
+             }
+ 
+             li {
+                 float: right;
+                 list-style-type: none;
+             }   
+ 
+             li a {      
+                 display: block;
+                 color: black;
+                 text-align: center;
+                 padding: 14px 16px;
+                 text-decoration: none;
+             }   
+ 
+             li a:hover {
+                 background-color: rgb(126, 126, 214);
+             }
+ 
+         </style>
     </head>
     <body align="center"> 
         <nav>
-            <a href="image.html">Image</a>
+            <ul>
+                <li align="end"><a href="image.html">Image</a></li>
+                <li align="end"><a href="advanced.html">advanced</a></li>
+            </ul>
         </nav>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-            
+            <ul>
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </ul>
         </form>
     </body>
 </html>

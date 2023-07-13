@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body > form > ul > li {
+             list-style-type: none;
+         }
+
+         input {
+             font-size: large;
+             border-radius: 30px;
+             width: 400px;
+             height: 30px
+         }
+
+         li {
+             float: right;
+             list-style-type: none;
+         }   
+
+         li a {      
+             display: block;
+             color: black;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+         }   
+
+         li a:hover {
+             background-color: rgb(126, 126, 214);
+         }
+
+     </style>
+     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body align="center"> 
-    <nav>
-        <a href="index.html">index</a>
-    </nav>
-    <form action="https://www.google.com/search"> 
+    <form action="https://www.google.com/search">
+        <nav>
+            <li align="end"><a href="index.html">Back</a></li>
+        </nav> 
         <input type="text" name="q">
         <input type="hidden" name="tbm" value="isch">
         <input type="submit" value="Google Search">
