@@ -2,47 +2,65 @@
 <html lang="en">
 <head>
     <style>
-        body > form > ul > li {
-             list-style-type: none;
-         }
+        body {
+            text-align: center;
+        }
 
-         input {
-             font-size: large;
-             border-radius: 30px;
-             width: 400px;
-             height: 30px
-         }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
 
-         li {
-             float: right;
-             list-style-type: none;
-         }   
+        input {
+            font-size: large;
+            border-radius: 30px;
+            width: 400px;
+            height: 30px;
+        }
 
-         li a {      
-             display: block;
-             color: black;
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;
-         }   
+        .top-right {
+            float: right;
+        }
 
-         li a:hover {
-             background-color: rgb(126, 126, 214);
-         }
+        li {
+            display: block;
+            margin-bottom: 10px;
+        }
 
-     </style>
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(126, 126, 214);
+        }
+
+    </style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body align="center"> 
+<body>
+    <ul class="top-right">
+        <li><a href="index.html">Back</a></li>
+    </ul>
     <form action="https://www.google.com/search">
-       <ul>
-            <li align="end"><a href="index.html">Back</a></li>
-            <li style="flex-direction: column;"><input type="text" name="q"></li>
+        <ul>
+            <li>
+                <input type="text" name="q">
+            </li>
+            <li>
                 <input type="hidden" name="tbm" value="isch">
-            <li style="flex-direction: column;"><input type="submit" value="Google Search"></li>
+            </li>
+            <li>
+                <input type="submit" value="Google Search">
+            </li>
         </ul>
     </form>
 </body>
